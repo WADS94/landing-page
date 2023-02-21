@@ -96,6 +96,7 @@ section.hero > * {
 .hero-image img {
   width: 100%;
   height: 20rem;
+  object-fit: cover;
 }
 
 .hero-text > button {
@@ -131,8 +132,9 @@ section.hero > * {
 }
 
 .illustration > img {
-  width: 100%;
+  max-width: 100%;
   height: 15rem;
+  object-fit: cover;
 }
 
 .illustration > p {
@@ -211,7 +213,7 @@ main {
   flex: 1;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 604px) {
   .inspiring-quote {
     width: 100%;
   }
@@ -222,6 +224,11 @@ main {
   }
 
   .hero-image {
+    padding: 2rem;
     margin: auto;
+  }
+
+  .illustration > img {
+    width: 100%;
   }
 }
